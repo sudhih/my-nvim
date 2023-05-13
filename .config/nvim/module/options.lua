@@ -7,6 +7,7 @@ vim.opt.relativenumber = true
 
 -- Make copy/paste work between vim and system clipboard
 -- `:h g:clipboard`
+vim.opt.clipboard = 'unnamedplus'
 if vim.fn.has('WSL') then
 	vim.g.clipboard = {
 		name = 'WslClipboard',
@@ -34,7 +35,3 @@ elseif vim.fn.has('mac') then
 		cache_enabled = 0,
 	}
 end	
-
-			
-			
-			
